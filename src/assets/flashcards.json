@@ -1,0 +1,14 @@
+[
+  {
+    "question": "Given an unsorted integer array, find a pair with the given sum in it.",
+    "answer": "We can use a <b>hash table</b> to solve this problem in linear time. The idea is to insert each array element <b>nums[i]</b> into a map. We also check if difference <b>(nums[i], target - nums[i])</b> already exists in the map or not. If the difference is seen before,"
+  },
+  {
+    "question": "Given an integer array, check if it contains a subarray having zero-sum.",
+    "answer": "We can easily solve this problem in linear time by using <b>hashing</b>. The idea is to use a set to check if a subarray with zero-sum is present in the given array or not. Traverse the array and maintain the sum of elements seen so far. If the sum is seen before (i.e., the sum exists in the set), return true as there exists at least one subarray with zero-sum that ends at the current index; otherwise, insert the sum into the set."
+  },
+  {
+    "question": "Given a binary array, sort it in linear time and constant space.",
+    "answer": "We can solve this problem in linear time by using the <b>partitioning logic of Quicksort</b>. The idea is to use <b>1 as a pivot element</b> and make one pass of the partition process."
+  }
+]

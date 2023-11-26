@@ -1,14 +1,14 @@
 // App.js
-import React from 'react';
+import { useState, useEffect } from 'react';
 import FlashcardDeck from './components/FlashcardDeck';
-
+import flashcardsData from './assets/flashcards.json'; // Adjust the path accordingly
 
 const App = () => {
-  const flashcards = [
-    { question: 'Question 1', answer: 'Answer 1' },
-    { question: 'Question 2', answer: 'Answer 2' },
-    // Add more flashcards as needed
-  ];
+  const [flashcards, setFlashcards] = useState([]);
+
+  useEffect(() => {
+    setFlashcards(flashcardsData);
+  }, []);
 
   return (
     <div className="App">
